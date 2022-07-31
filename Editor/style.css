@@ -1,0 +1,197 @@
+.buttonA {
+	background-color:#36393f;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Verdana;
+	font-size:18px;
+	padding:14px 14px;
+	text-decoration:none;
+  border: none;
+
+}
+.buttonA:hover {
+	background-color:#484b52;
+}
+.buttonA:active {
+	position:absolute;
+  background-color:#36393f;
+}
+
+
+
+.button {
+  appearance: none;
+  background-color: #0d0d0d;
+  border: 0px solid rgba(27, 31, 35, .15);
+  
+  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.button-3:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+
+.button-3:hover {
+  background-color: #0b0b0b;
+}
+
+.button-3:disabled {
+  background-color: #94d3a2;
+  border-color: rgba(27, 31, 35, .1);
+  color: rgba(255, 255, 255, .8);
+  cursor: default;
+}
+
+.button-3:active {
+  background-color: #090909;
+  box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+}
+
+.textA {
+  color: rgba(0,0,0,.87);
+  border-bottom-color: rgba(0,0,0,.42);
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: .009375em;
+  text-decoration: inherit;
+  text-transform: inherit;
+  align-self: flex-end;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20px 16px 6px;
+  transition: opacity 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: none;
+  border-bottom: 1px solid;
+  border-radius: 4px 4px 0 0;
+  background: rgb(245, 245, 245);
+  height: 56px;
+}
+.textA:hover{
+  border-bottom-color: rgba(0,0,0,.87);
+  background: #ececec;
+}
+
+.textA:focus{
+  border-color: #6200ee;
+}
+
+input {
+  box-sizing: border-box;
+  width: 50px;
+  height: 50px;
+  border: 4px solid #ffffff;
+  border-radius: 50%;
+  background: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: Roboto;
+  outline: 0;
+}
+
+.square {
+  height: 100000px;
+  width: 100000px;
+
+  position:static;
+}
+
+.text{
+  width: 100%;
+  color: #FFF;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.container {
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr; 
+  gap: 2px 1px; 
+  grid-template-areas: 
+    "a b c"
+    "d e f"
+    "g h i"; 
+}
+.a { grid-area: a; }
+.b { grid-area: b; }
+.c { grid-area: c; }
+.d { grid-area: d; }
+.e { grid-area: e; }
+.f { grid-area: f; }
+.g { grid-area: g; }
+.h { grid-area: h; }
+.i { grid-area: i; }
+
+/* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 0s;
+  animation: fadeIn 0s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}

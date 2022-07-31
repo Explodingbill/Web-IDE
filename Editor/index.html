@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<body style="overflow: hidden; background-color: #36393f;">
+<link rel="stylesheet" href="style.css">
+
+<style type="text/css">* { padding: 0; margin: 0; }</style>
+
+
+
+<div class="square" style="background-color: #202225; position: absolute; left: 0%; width: 49px;"></div>
+
+<div class="square" style="background-color: #202225; position: absolute; left: 0%; width: 100%; height: 55px;"></div>
+<div class="square" style="background-color: #151515; position: absolute; left: 0%; width: 100%; height: calc(55px / 2);"></div>
+
+<!--TODO, turn into a function of some sort or just make cleaner-->
+<div id="sideButtons">
+    <p class="buttonA" style="top: 58px; left: 3px; position:absolute; width: 14px; height: 14px; z-index: 10;" > <img src="Icons/Achievement.png" width="32px" style="position: absolute; left: 5px; top:5px;"></img> </p>
+    <p class="buttonA" style="top: calc(58px + calc(calc(20px + 28px) * 1)); left: 3px; position:absolute; width: 14px; height: 14px; z-index: 10;" > <img src="Icons/Block.png" width="32px" style="position: absolute; left: 5px; top:5px;"></img> </p>
+    <p class="buttonA" style="top: calc(58px + calc(calc(20px + 28px) * 2)); left: 3px; position:absolute; width: 14px; height: 14px; z-index: 10;" > <img src="Icons/Level.png" width="32px" style="position: absolute; left: 5px; top:5px;"></img> </p>
+    <p class="buttonA" style="top: calc(58px + calc(calc(20px + 28px) * 3)); left: 3px; position:absolute; width: 14px; height: 14px; z-index: 10;" > <img src="Icons/Icon.png" width="32px" style="position: absolute; left: 5px; top:5px;"></img> </p>
+    <p class="buttonA" style="top: calc(58px + calc(calc(20px + 28px) * 4)); left: 3px; position:absolute; width: 14px; height: 14px; z-index: 10;" > <img src="Icons/Button.png" width="32px" style="position: absolute; left: 5px; top:5px;"></img> </p>
+    <p class="buttonA" style="top: calc(58px + calc(calc(20px + 28px) * 5)); left: 3px; position:absolute; width: 14px; height: 14px; z-index: 10;" > <img src="Icons/Overlay.png" width="32px" style="position: absolute; left: 5px; top:5px;"></img> </p>
+    <p class="buttonA" style="top: calc(58px + calc(calc(20px + 28px) * 6)); left: 3px; position:absolute; width: 14px; height: 14px; z-index: 10;" > <img src="Icons/GDLang.png" width="32px" style="position: absolute; left: 5px; top:5px;"></img> </p>
+    <p class="buttonA" style="top: calc(58px + calc(calc(20px + 28px) * 7)); left: 3px; position:absolute; width: 14px; height: 14px; z-index: 10;" > <img src="Icons/Image.png" width="32px" style="position: absolute; left: 5px; top:5px;"></img> </p>
+    <p class="buttonA" style="top: calc(58px + calc(calc(20px + 28px) * 8)); left: 3px; position:absolute; width: 14px; height: 14px; z-index: 10;" > <img src="Icons/Popup.png" width="32px" style="position: absolute; left: 5px; top:5px;"></img> </p>
+    <p class="buttonA" style="top: calc(58px + calc(calc(20px + 28px) * 9)); left: 3px; position:absolute; width: 14px; height: 14px; z-index: 10;" > <img src="Icons/Text.png" width="32px" style="position: absolute; left: 5px; top:5px;"></img> </p>
+    <p class="buttonA" style="top: calc(58px + calc(calc(20px + 28px) * 10)); left: 3px; position:absolute; width: 14px; height: 14px; z-index: 10;" > <img src="Icons/Toggle.png" width="32px" style="position: absolute; left: 5px; top:5px;"></img> </p>
+    <p class="buttonA" style="top: calc(58px + calc(calc(20px + 28px) * 11)); left: 3px; position:absolute; width: 14px; height: 14px; z-index: 10;" > <img src="Icons/Textbox.png" width="32px" style="position: absolute; left: 5px; top:5px;"></img> </p>
+    <p class="buttonA" style="top: calc(58px + calc(calc(20px + 28px) * 12)); left: 3px; position:absolute; width: 14px; height: 14px; z-index: 10;" > <img src="Icons/Rating.png" width="32px" style="position: absolute; left: 5px; top:5px;"></img> </p>
+    <p class="buttonA" style="top: calc(58px + calc(calc(20px + 28px) * 13)); left: 3px; position:absolute; width: 14px; height: 14px; z-index: 10;" > <img src="Icons/Trigger.png" width="32px" style="position: absolute; left: 5px; top:5px;"></img> </p>
+    <p class="buttonA" style="top: calc(58px + calc(calc(20px + 28px) * 14)); left: 3px; position:absolute; width: 14px; height: 14px; z-index: 10;" > <img src="Icons/Scene.png" width="32px" style="position: absolute; left: 5px; top:5px;"></img> </p>
+</div>
+
+<div id="panel" style="position: absolute; top: 55px; left: 49px; right: 10%; width: calc(100% - 49px); height: calc(100% - 55px); z-index: 1;">
+    <iframe src="Panel/home.html" frameBorder="0" style="width:100%; height: 100%; user-select: none;"></iframe>
+</div>
+
+<img style="left: 3px; top:3px; position: absolute; user-select: none;"src="Icon.png" width="22px"></img>
+<p id="title" style="left: calc(6px + 22px); top:3.5px; position: absolute; color: rgb(93, 93, 93); font-family: verdana; user-select: none;">HEHEHEHA</p>
+
+
+
+
+
+<script>
+  // When the user clicks on div, open the popup
+  function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+  }
+</script>
+<script src="GDMod.js"></script>
+
+</body>
+</html>
+
